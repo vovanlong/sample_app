@@ -33,3 +33,6 @@ Gemfile.lock
 Guardfile
 /vendor/*
 /vendor/bundle/ruby/2.5.0/bin/_guard-core
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

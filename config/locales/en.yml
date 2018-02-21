@@ -33,13 +33,32 @@ en:
   layouts:
     application:
       content: " | Ruby on Rails Tutorial Sample App"
+    header: 
+      title_header: "sample app"
+      home_nav_header: "home"
+      help_nav_header: "help"
+      log_in_nav_header: "log in"
+    footer: 
+      about_nav: "About"
+      contact_nav: "contact"
+      href_1: "http://www.railstutorial.org/"
+      link_name_1: "Ruby on Rails Tutorial"
+      href_2: "http://www.michaelhartl.com/"
+      link_name_2: "Michael Hartl"
+      href_3: "http://news.railstutorial.org/"
+      link_name_3: "New"
+      p1: "The"
+      p2: "by"
   static_pages:
     home:
       title: "home"
+      p: "Welcome to the Sample App"
       p1: "This is the home page for the"
       href_home: "http://www.railstutorial.org/"
       link_home: "Ruby on Rails Tutorial"
       p2: " sample application."
+      p3: "Rails logo"
+      link_rails: "Sign up now!"
     help:
       title: "Help"
       p1: " Get help on the Ruby on Rails Tutorial at the"
@@ -65,10 +84,15 @@ en:
       p_the: "The"
       p_is_a: "is a"
     contact:
-      title : "contact"
+      title : "Contact"
       p1: "  Contact the Ruby on Rails Tutorial about the sample app at the"
       link_contact: "contact page"
       href_contact: "http://www.railstutorial.org/contact"
+  users:
+    new: 
+      title: "Sign up"
+      p1: "This will be a signup page for new users"
+
 
 
 
