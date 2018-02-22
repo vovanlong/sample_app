@@ -36,5 +36,3 @@ end
 
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem "config"
-gem "rails", "5.1.4"
-gem "bcrypt", "3.1.11"

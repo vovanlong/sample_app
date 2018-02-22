@@ -92,9 +92,14 @@ en:
     new: 
       title: "Sign up"
       p1: "This will be a signup page for new users"
-    form:
-      p1: "pluralize user.errors.count,"
-      p2: "prohibited this user from being saved:"
+      p2: "Create my account"
+      p3: "Confirmation"
+    create:
+      Welcome: "Welcome to the Sample App!"
+  shared:
+    error_messages:
+      content: "The form contains"
+
 
 
 
