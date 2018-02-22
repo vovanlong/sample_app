@@ -4,4 +4,3 @@ name_maxlenth: 50
 password_minlenth: 6
 size: 80
 error: "error"
-

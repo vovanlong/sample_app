@@ -38,6 +38,11 @@ en:
       home_nav_header: "home"
       help_nav_header: "help"
       log_in_nav_header: "log in"
+      content_users: "Users"
+      content_profile: "Profile"
+      content_settings: "Settings"
+      content_logout: "Log out"
+      content_Account: "Account"
     footer: 
       about_nav: "About"
       contact_nav: "contact"
@@ -99,6 +104,13 @@ en:
   shared:
     error_messages:
       content: "The form contains"
+  sessions: 
+    new:
+      title: "Log in"
+      signupnow: "Sign up now!"
+      content: "New user?"
+    create:
+      invalid: "Invalid email/password combination"
 
 
 
