@@ -42,7 +42,7 @@ en:
       content_profile: "Profile"
       content_settings: "Settings"
       content_logout: "Log out"
-      content_Account: "Account"
+      content_account: "Account"
     footer: 
       about_nav: "About"
       contact_nav: "contact"
@@ -109,9 +109,9 @@ en:
       title: "Log in"
       signupnow: "Sign up now!"
       content: "New user?"
+      content_1: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
-
 
 
 
