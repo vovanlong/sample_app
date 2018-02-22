@@ -92,6 +92,10 @@ en:
     new: 
       title: "Sign up"
       p1: "This will be a signup page for new users"
+    form:
+      p1: "pluralize user.errors.count,"
+      p2: "prohibited this user from being saved:"
+
 
 
 
