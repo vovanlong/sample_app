@@ -5,7 +5,7 @@ gem "jbuilder", "2.7.0"
 gem "jquery-rails", "4.3.1"
 gem "puma", "3.9.1"
 gem "rails", "5.1.4"
-gem 'bootstrap-sass', '3.3.7'
+gem "bootstrap-sass", "3.3.7"
 gem "sass-rails", "5.0.6"
 gem "turbolinks", "5.0.1"
 gem "uglifier", "3.2.0"
@@ -36,3 +36,5 @@ end
 
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 gem "config"
+gem "rails", "5.1.4"
+gem "bcrypt", "3.1.11"

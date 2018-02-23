@@ -1,1 +1,4 @@
 dem: 2
+name_maximum: 50
+email_maximum: 255
+password_minimum: 6
