@@ -94,13 +94,31 @@ en:
       link_contact: "contact page"
       href_contact: "http://www.railstutorial.org/contact"
   users:
+    user:
+      content_delete: "delete"
+      content_1: "You sure?"
     new: 
       title: "Sign up"
       p1: "This will be a signup page for new users"
       p2: "Create my account"
       p3: "Confirmation"
+      p4: "Create my account"
     create:
       Welcome: "Welcome to the Sample App!"
+    logged_in:
+      content: "Please log in."
+    edit:
+      title: "Edit user"
+      h1: "Update your profile"
+      save_change: "Save changes"
+      change: "change"
+    index: 
+      title: "All users"
+    destroy:
+      content: "User deleted"
+      content_error: "ERROR"
+    update:
+      content: "Profile updated"
   shared:
     error_messages:
       content: "The form contains"
