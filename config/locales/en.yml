@@ -104,7 +104,8 @@ en:
       p3: "Confirmation"
       p4: "Create my account"
     create:
-      Welcome: "Welcome to the Sample App!"
+      welcome: "Welcome to the Sample App!"
+      content_1: "Please check your email to activate your account."
     logged_in:
       content: "Please log in."
     edit:
@@ -130,6 +131,34 @@ en:
       content_1: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
+  mailers:
+    user_mailer:
+      welcome: "Hi"
+      subject: "Account activation"
+      mail: "to@example.org"
+  user_mailer:
+    account_activation_text:
+      content_1: "Hi"
+      content_2: "Welcome to the Sample App! Click on the link below to activate your account:"
+    account_activation_html:
+      content_1: "Sample App"
+      content_2: "Hi"  
+      content_3: "Welcome to the Sample App! Click on the link below to activate your account:"
+      content_4: "Activate"
+    password_reset:
+      h1: "User#password_reset"
+      content: "find me in app/views/user_mailer/password_reset.html.erb"
+    password_reset_text:
+      content_1: "User#password_reset"
+      content_2:  "find me in app/views/user_mailer/password_reset.text.erb"
+  app:
+    controller:
+      content_success: "Account activated!"
+      content_error: "Invalid activation link"
+    sessions:
+      message_1: "Account not activated. Check your email for the activation link. " 
+      message_2: "Check your email for the activation link."     
+
 
 
 
