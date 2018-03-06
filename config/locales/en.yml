@@ -110,6 +110,13 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       content_info: "Please check your email to activate your account."
+    follow_form_html:
+      content_submit: "Follow"
+    unfollow_form_html:
+      content_submit: "Unfollow"
+    show_follow_html:
+      link_view: "view my profile"
+      content_Microposts: "Microposts:"
     logged_in:
       content: "Please log in."
     edit:
@@ -127,7 +134,9 @@ en:
   shared:
     error_messages:
       content: "The form contains"
-
+    stats_html:
+      content_following: "following"
+      content_followers: "followers"
     user_info_html:
       link_view: "view my profile"
     micropost_form_html:

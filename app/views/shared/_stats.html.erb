@@ -1,0 +1,12 @@
+<% create_new_user %>
+<div class="stats">
+  <%= link_to following_user_path(@user) do %>
+    <strong id="following" class="stat"><%= @user.following.size %>
+    </strong>
+    <%= t "shared.stats_html.content_following" %>
+  <% end %>
+  <%= link_to followers_user_path @user do %>
+    <strong id="followers" class="stat"><%= @user.followers.size %></strong>
+    <%= t "shared.stats_html.content_followers" %>
+  <% end %>
+</div>
