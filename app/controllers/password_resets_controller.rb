@@ -12,7 +12,7 @@ class PasswordResetsController < ApplicationController
       @user.send_password_reset_email
       flash[:info] = t "app.password_resets_controller.create_info"
       redirect_to root_url
-    else    
+    else
       flash.now[:danger] = t "app.password_resets_controller.create_info"
       render :new
     end

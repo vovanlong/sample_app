@@ -32,6 +32,7 @@ gem "rubocop", "~> 0.52.1", require: false
 
 group :production do
   gem "pg", "0.18.4"
+  gem "fog", "1.42"
 end
 
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
@@ -41,4 +42,7 @@ gem "bcrypt", "3.1.11"
 gem "faker", "1.7.3"
 gem "will_paginate", "3.1.6"
 gem "bootstrap-will_paginate", "1.0.0"
+gem "carrierwave", "1.2.2"
+gem "mini_magick", "4.7.0"
+gem "i18n-js"
 
