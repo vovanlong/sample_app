@@ -105,7 +105,7 @@ en:
       p4: "Create my account"
     create:
       welcome: "Welcome to the Sample App!"
-      content_1: "Please check your email to activate your account."
+      content_info: "Please check your email to activate your account."
     logged_in:
       content: "Please log in."
     edit:
@@ -123,19 +123,29 @@ en:
   shared:
     error_messages:
       content: "The form contains"
+  password_resets:
+    new_html:
+      title: "Forgot password"
+      button_submit: "submit"
+    edit_html:
+      title: "Reset password"
+      button_submit: "Update password"
+      content_label: "Confirmation"
   sessions: 
     new:
       title: "Log in"
       signupnow: "Sign up now!"
       content: "New user?"
       content_1: "Remember me on this computer"
+      content_forgotpassword: "(forgot password)"
     create:
       invalid: "Invalid email/password combination"
   mailers:
     user_mailer:
       welcome: "Hi"
-      subject: "Account activation"
+      subject_account_activation: "Account activation"
       mail: "to@example.org"
+      subject_password_reset: "Password reset"
   user_mailer:
     account_activation_text:
       content_1: "Hi"
@@ -144,23 +154,30 @@ en:
       content_1: "Sample App"
       content_2: "Hi"  
       content_3: "Welcome to the Sample App! Click on the link below to activate your account:"
-      content_4: "Activate"
+      content_active: "Activate"
     password_reset:
-      h1: "User#password_reset"
-      content: "find me in app/views/user_mailer/password_reset.html.erb"
+      h1: "Password reset"
+      content: "To reset your password click the link below:"
+      content_href: "Reset password"
+      p1: "This link will expire in two hours."
+      p2: "If you did not request your password to be reset, please ignore this email and
+your password will stay as it is."
     password_reset_text:
       content_1: "User#password_reset"
-      content_2:  "find me in app/views/user_mailer/password_reset.text.erb"
+      content_2: "find me in app/views/user_mailer/password_reset.text.erb"
+      content_3: "To reset your password click the link below:"
+      content_4: "This link will expire in two hours. If you did not request your password to be reset, please ignore this email and
+your password will stay as it is."
   app:
     controller:
       content_success: "Account activated!"
       content_error: "Invalid activation link"
     sessions:
       message_1: "Account not activated. Check your email for the activation link. " 
-      message_2: "Check your email for the activation link."     
-
-
-
-
-
-
+      message_2: "Check your email for the activation link." 
+    password_resets_controller:
+      create_info: "Email sent with password reset instructions"
+      create_danger: "Email address not found"    
+      update_content: "can't be empty"
+      update_success: "Password has been reset."
+      check_expiration: "Password reset has expired."

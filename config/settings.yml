@@ -8,6 +8,7 @@ index:
   size: 50
 user:
   size: 50
+  hours: 2
 session_controller:
   number: "1"
 

@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
         params[:session][:remember_me] == Settings.session_controller.number ? remember(@user) : forget(@user)
         redirect_back_or @user
       else
-        message = t "app.sessions.message_1" 
+        message = t "app.sessions.message_1"
         flash[:warning] = message
         redirect_to root_url
       end
