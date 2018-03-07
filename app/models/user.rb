@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
   validates :name,  presence: true, length: {maximum: Settings.name_maxlenth}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, length: {maximum: Settings.email_maxlenth},
@@ -34,15 +34,28 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attribute :remember_digest, nil 
+    update_attribute :remember_digest, nil
   end
 
   def activate
-    update_columns activated: true, activated_at: Time.zone.now 
+    update_columns activated: true, activated_at: Time.zone.now
   end
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.user.hours.hours.ago
   end
 
   private
@@ -53,6 +66,6 @@ class User < ApplicationRecord
 
   def create_activation_digest
     self.activation_token  = User.new_token
-    self.activation_digest = User.digest activation_token 
+    self.activation_digest = User.digest activation_token
   end
 end
