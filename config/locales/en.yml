@@ -54,6 +54,9 @@ en:
       link_name_3: "New"
       p1: "The"
       p2: "by"
+  model:
+    micropost:
+      picture_size: "should be less than 5MB"
   static_pages:
     home:
       title: "home"
@@ -64,6 +67,7 @@ en:
       p2: " sample application."
       p3: "Rails logo"
       link_rails: "Sign up now!"
+      h3: "Micropost Feed"
     help:
       title: "Help"
       p1: " Get help on the Ruby on Rails Tutorial at the"
@@ -123,6 +127,12 @@ en:
   shared:
     error_messages:
       content: "The form contains"
+
+    user_info_html:
+      link_view: "view my profile"
+    micropost_form_html:
+      placeholder: "Compose new micropost..."
+      submit_post: "Post"
   password_resets:
     new_html:
       title: "Forgot password"
@@ -181,3 +191,18 @@ your password will stay as it is."
       update_content: "can't be empty"
       update_success: "Password has been reset."
       check_expiration: "Password reset has expired."
+  microposts:
+    micropost_html:
+      link_delete: "delete"
+      content_sure: "You sure?"
+      content_posted: "Posted"
+    controller:
+      create_success: "Micropost created!"
+      destroy_success: "Micropost deleted"
+      destroy_danger: "Micropost Fail"
+    show_html:
+      content: "Microposts"
+  javascript:
+    micropost_javascript:
+      alert_content: "Maximum file size is 5MB. Please choose a smaller file."
+
