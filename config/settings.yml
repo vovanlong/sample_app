@@ -17,3 +17,5 @@ micropost:
   picture_size: 5
 user_info_html:
   number_size: 50
+show_follow_html:
+  number_size: 30

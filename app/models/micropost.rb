@@ -4,6 +4,7 @@ class Micropost < ApplicationRecord
   validates :content, presence: true, length: {maximum: Settings.micropost.number_maximum}
   validate  :picture_size
   scope :swap, ->{order(created_at: :desc)}
+  scope :find_post_of_current_and_followed, ->(following_ids, id){where "user_id IN (?) OR user_id = ?", following_ids, id}
   mount_uploader :picture, PictureUploader
 
   private
